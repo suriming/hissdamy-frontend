@@ -1,8 +1,18 @@
-import logo from "./logo.svg";
+import { Fragment } from "react";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
-  return <div className="App"></div>;
+  return (
+    <Fragment>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<Home />} />
+        </Routes>
+      </BrowserRouter>
+    </Fragment>
+  );
 }
 
 export default App;
