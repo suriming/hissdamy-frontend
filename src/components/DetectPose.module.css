@@ -1,0 +1,20 @@
+.cam {
+  position: absolute;
+  width: 237px;
+  height: 189px;
+  text-align: center;
+  z-index: 9;
+}
+
+.webcamContainer {
+  margin: auto;
+  padding: auto;
+}
+
+.canvas {
+  position: absolute;
+  width: 237px;
+  height: 189px;
+  text-align: center;
+  z-index: 9;
+}
