@@ -8,9 +8,18 @@
 .mainWrapper {
   border: 1px solid #dbdbdb;
   border-radius: 8px;
-  padding: 32px 16px 27px 16px;
   color: #515151;
-  height: 760px;
-  width: 352px;
+  width: 375px;
+  height: 811px;
+  /* left: 20px;
+  top: 21px; */
   margin: auto;
+}
+
+.top {
+  position: absolute;
+  width: 397.5px;
+  height: 282.45px;
+  left: 385.5px;
+  top: -96px;
 }
