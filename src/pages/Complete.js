@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useLocation } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 import { sendTrainData } from "../lib/data";
 
 function Complete({ props }) {
@@ -36,9 +36,15 @@ function Complete({ props }) {
       console.log(res);
     })();
   }, []);
+
+  const naviate = useNavigate();
+  const onClick = () => {
+    naviate("/test");
+  };
   return (
     <>
       <div>complete page</div>
+      <button onClick={onClick}>테스트 하러가기</button>
     </>
   );
 }

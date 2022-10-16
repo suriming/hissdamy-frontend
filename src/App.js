@@ -8,6 +8,7 @@ import top from "./assets/top.png";
 import Complete from "./pages/Complete";
 import SetPose1 from "./pages/SetPose1";
 import SetPose2 from "./pages/SetPose2";
+import ResultTest from "./pages/ResultTest";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
             <Route path="pose1" element={<SetPose1 />} />
             <Route path="pose2" element={<SetPose2 />} />
             <Route path="complete" element={<Complete />} />
+            <Route path="test" element={<ResultTest />} />
           </Routes>
         </Container>
       </BrowserRouter>

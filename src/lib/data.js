@@ -14,4 +14,18 @@ const sendTrainData = async (data) => {
   return res.data;
 };
 
-export { sendTrainData };
+const sendTestData = async (data) => {
+  let failed;
+  const res = await axios
+    .post("http://127.0.0.1:8000/test/", data)
+    .catch((error) => {
+      console.log(error);
+      failed = error.response.data;
+    });
+  if (failed) {
+    return failed;
+  }
+  return res.data;
+};
+
+export { sendTrainData, sendTestData };
