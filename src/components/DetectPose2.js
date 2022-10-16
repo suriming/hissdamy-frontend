@@ -8,7 +8,7 @@ import { drawKeypoints } from "./utilities";
 import { sendTrainData } from "../lib/data";
 import { useNavigate } from "react-router";
 
-function DetectPose() {
+function DetectPose2() {
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
 
@@ -217,6 +217,7 @@ function DetectPose() {
     // const model = poseDetection.SupportedModels.BlazePose;
     // const detector = await poseDetection.createDetector(model)
   }, []);
+
   const runPoseDetection = async () => {
     const model = poseDetection.SupportedModels.BlazePose;
     const detectorConfig = {
@@ -324,4 +325,4 @@ function DetectPose() {
   );
 }
 
-export default DetectPose;
+export default DetectPose2;

@@ -18,8 +18,9 @@ function Complete({ props }) {
     //   });
     // });
     data.forEach((items) => {
-      ttt["frame"].push({ keypoints: items });
+      ttt["frame"].push({ keypoints: items, label: 0 });
     });
+
     console.log(ttt);
     // console.log(ttt)
     (async () => {
