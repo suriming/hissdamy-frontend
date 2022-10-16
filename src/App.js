@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import SetPose from "./pages/SetPose";
 import styled from "styled-components";
 import top from "./assets/top.png";
+import Complete from "./pages/Complete";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="pose" element={<SetPose />} />
+            <Route path="complete" element={<Complete />} />
           </Routes>
         </Container>
       </BrowserRouter>
