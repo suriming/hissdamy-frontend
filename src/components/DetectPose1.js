@@ -6,9 +6,11 @@ import Webcam from "react-webcam";
 import styles from "./DetectPose.module.css";
 import { drawKeypoints } from "./utilities";
 import { sendTrainData } from "../lib/data";
-import { useNavigate } from "react-router";
+import { useLocation, useNavigate } from "react-router";
 
 function DetectPose1() {
+  const location = useLocation();
+  const data0 = location.state.data0;
   const webcamRef = useRef(null);
   const canvasRef = useRef(null);
 
@@ -304,8 +306,8 @@ function DetectPose1() {
   const onClick = () => {
     console.log("onclick");
     console.log(arr);
-    navigate("/complete", {
-      state: { data: final },
+    navigate("/pose2", {
+      state: { data0: data0, data1: final },
     });
   };
 

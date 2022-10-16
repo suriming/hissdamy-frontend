@@ -4,10 +4,11 @@ import { sendTrainData } from "../lib/data";
 
 function Complete({ props }) {
   const location = useLocation();
-  const data = location.state.data;
-  const frame = location.state.frame;
-  console.log(data);
-  console.log(frame);
+  const data0 = location.state.data0;
+  const data1 = location.state.data1;
+  const data2 = location.state.data2;
+
+  console.log(data0);
   console.log("실험!!!");
   useEffect(() => {
     let ttt = {};
@@ -17,8 +18,14 @@ function Complete({ props }) {
     //     ttt["frame"].push({ keypoints: item });
     //   });
     // });
-    data.forEach((items) => {
+    data0.forEach((items) => {
       ttt["frame"].push({ keypoints: items, label: 0 });
+    });
+    data1.forEach((items) => {
+      ttt["frame"].push({ keypoints: items, label: 1 });
+    });
+    data2.forEach((items) => {
+      ttt["frame"].push({ keypoints: items, label: 2 });
     });
 
     console.log(ttt);

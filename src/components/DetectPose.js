@@ -217,6 +217,7 @@ function DetectPose() {
     // const model = poseDetection.SupportedModels.BlazePose;
     // const detector = await poseDetection.createDetector(model)
   }, []);
+
   const runPoseDetection = async () => {
     const model = poseDetection.SupportedModels.BlazePose;
     const detectorConfig = {
@@ -303,8 +304,8 @@ function DetectPose() {
   const onClick = () => {
     console.log("onclick");
     console.log(arr);
-    navigate("/complete", {
-      state: { data: final },
+    navigate("/pose1", {
+      state: { data0: final },
     });
   };
 

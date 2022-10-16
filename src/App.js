@@ -6,6 +6,8 @@ import SetPose from "./pages/SetPose";
 import styled from "styled-components";
 import top from "./assets/top.png";
 import Complete from "./pages/Complete";
+import SetPose1 from "./pages/SetPose1";
+import SetPose2 from "./pages/SetPose2";
 
 function App() {
   return (
@@ -16,6 +18,8 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="pose" element={<SetPose />} />
+            <Route path="pose1" element={<SetPose1 />} />
+            <Route path="pose2" element={<SetPose2 />} />
             <Route path="complete" element={<Complete />} />
           </Routes>
         </Container>

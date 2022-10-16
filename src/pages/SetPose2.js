@@ -1,12 +1,12 @@
 import DetectPose from "../components/DetectPose";
 import DetectPose2 from "../components/DetectPose2";
 
-function SetPose() {
+function SetPose2() {
   return (
     <>
-      <DetectPose />
+      <DetectPose2 />
     </>
   );
 }
 
-export default SetPose;
+export default SetPose2;
