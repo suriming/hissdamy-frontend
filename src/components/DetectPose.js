@@ -209,7 +209,7 @@ function DetectPose() {
 
   let device = 0;
   let arr = [];
-
+  
   useEffect(() => {
     // const model = poseDetection.SupportedModels.BlazePose;
     // const detector = await poseDetection.createDetector(model)
