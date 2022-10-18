@@ -1,14 +1,33 @@
+
+.progressing{
+  width: 375px;
+  margin: 80px 0 0px 0;
+  text-align: center;
+  color: #5a5a5a;
+  font-size: 14px;
+}
+
+.webcamContainer_container {
+  width: 375px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+.webcamContainer {
+  display: flex;
+  width: 237px;
+  margin-top: 10px;
+}
+
 .cam {
   position: absolute;
   width: 237px;
   height: 189px;
   text-align: center;
   z-index: 9;
-}
-
-.webcamContainer {
-  margin: auto;
-  padding: auto;
 }
 
 .canvas {
@@ -19,8 +38,32 @@
   z-index: 9;
 }
 
-.nextButton {
-  position: absolute;
-  left: 141px;
-  top: 634px;
+.button_container {
+  display: flex;
+  width: 375px;
+  justify-content: center;
+  margin-top: 150px;
+}
+
+.nextButton{
+  display: flex;
+  height: 110px;
+  width: 110px;
+  justify-content: center;
+  align-items: center;
+  padding: 0px;
+  
+  color: #7dbcd2;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+
+  background-color: transparent;
+  border: #7dbcd2 solid 1.5px;
+  border-radius: 100%;
+  
+}
+.nextButton:hover {
+  background-color: #7dbbd2bc;
+  color: white
 }

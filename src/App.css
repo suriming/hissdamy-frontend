@@ -36,3 +36,19 @@
     transform: rotate(360deg);
   }
 }
+
+
+img {
+  display: flex;
+}
+
+.extraText{
+  margin-top: -140px;
+  margin-left: 170px;
+}
+
+.logo {
+  width: 150px;
+  margin-top: 20px;
+  margin-left: 25px;
+}
