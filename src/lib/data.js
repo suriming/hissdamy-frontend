@@ -3,7 +3,7 @@ import axios from "axios";
 const sendTrainData = async (data) => {
   let failed;
   const res = await axios
-    .post("http://127.0.0.1:8000/train/", data)
+    .post("https://ssdam.herokuapp.com/train/", data)
     .catch((error) => {
       console.log(error);
       failed = error.response.data;
@@ -17,7 +17,7 @@ const sendTrainData = async (data) => {
 const sendTestData = async (data) => {
   let failed;
   const res = await axios
-    .post("http://127.0.0.1:8000/test/", data)
+    .post("https://ssdam.herokuapp.com/test/", data)
     .catch((error) => {
       console.log(error);
       failed = error.response.data;
